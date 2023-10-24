@@ -16,7 +16,7 @@
         public string Name 
         { 
             get => _name; 
-            set => _name = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null."); 
+            set => _name = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null."); 
         }
 
         /// <summary>
@@ -25,7 +25,7 @@
         public string Breed 
         { 
             get => _breed; 
-            set => _breed = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null."); 
+            set => _breed = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null."); 
         }
 
         /// <summary>
@@ -52,7 +52,7 @@
         public string Coloring 
         { 
             get => _coloring; 
-            set => _coloring = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null."); 
+            set => _coloring = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null."); 
         }
 
         /// <summary>

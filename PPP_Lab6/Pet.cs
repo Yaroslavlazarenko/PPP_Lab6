@@ -19,7 +19,7 @@
         public string Gender 
         { 
             get => _gender; 
-            set => _gender = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null.") ; 
+            set => _gender = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null.") ; 
         }
 
         /// <summary>

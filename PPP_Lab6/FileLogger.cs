@@ -27,7 +27,7 @@ namespace PPP_Lab6
         public string LogFileName
         {
             get => _logFileName;
-            set => _logFileName = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null.");
+            set => _logFileName = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null.");
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace PPP_Lab6
         public string LoggerName
         {
             get => _loggerName;
-            set => _loggerName = !string.IsNullOrEmpty(value) ? value.Trim() : throw new Exception("Строка пуста или равна null.");
+            set => _loggerName = !string.IsNullOrEmpty(value) ? value.Trim() : throw new ArgumentException("Строка пуста или равна null.");
         }
 
         /// <summary>
