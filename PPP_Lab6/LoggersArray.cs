@@ -14,7 +14,14 @@ namespace PPP_Lab6
         /// <param name="loggers"></param>
         public LoggersArray(params Logger[] loggers)
         {
-            _loggers = loggers;
+            if(loggers != null)
+            {
+                _loggers = loggers;
+            }
+            else
+            {
+                throw new ArgumentException("Входной класс не должен быть пустым");
+            }
         }
 
         /// <summary>

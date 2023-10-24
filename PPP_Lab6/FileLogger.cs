@@ -75,7 +75,7 @@ namespace PPP_Lab6
             else
             {
                 LogError("Строка пуста или равна null.");
-                throw new Exception("Строка пуста или равна null.");
+                throw new ArgumentException("Строка пуста или равна null.");
             }
         }
 
